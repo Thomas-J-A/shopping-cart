@@ -1,0 +1,146 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+#root {
+  height: 100vh;
+}
+
+/******** Header ********/
+
+#root > header {
+  height: 10vh;
+  background-color: #333;
+}
+
+#root > header > nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+#root > header > nav a {
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+#logo {
+  margin-right: auto;
+}
+
+/******** Home Page ********/
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+#home-page h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#home-page h2 {
+  margin-top: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#home-page button {
+  display: block;
+  width: 17rem;
+  margin: 5rem auto;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+#home-page .reviews {
+  display: flex;
+  justify-content: space-around;
+}
+
+#home-page .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/******** Shop Page ********/
+
+#shop-page {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 13% 87%;
+  min-height: 90vh;
+}
+
+#shop-page nav {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding-top: 2rem;
+  background-color: #555;
+}
+
+#shop-page nav ul {
+  list-style-type: none;
+}
+
+#shop-page nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+#shop-page header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: antiquewhite;
+  font-size: 1.4rem;
+}
+
+#shop-page section {
+  min-height: 90vh;
+  background-color: #ddd;
+}
+
+#shop-page div#products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+#shop-page .product-card {
+  height: 19rem;
+  width: 19rem;
+  border: 2px solid #000;
+  border-radius: .3rem;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#shop-page .product-card img {
+  width: 100%;
+  height: 75%;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}

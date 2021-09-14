@@ -43,6 +43,9 @@ module.exports = {
         ignored: /node_modules/,
       },
     },
+    historyApiFallback: {
+      index: '/dist/',
+    },
     port: 8080,
     open: 'dist/',
     hot: true,
